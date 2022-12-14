@@ -28,6 +28,17 @@ City Madness is an artistic installation that aims to create generative maps bas
 The installation is conceived as artistical alternative path finder which allows the user to experience a different approach to city exploration and navigation, focusing not only on the performance of the paths in terms of distance and time lenght of the journey, but also on the quality of the journey itself (how pleasant or not the user find the sound experience).
 
 ## Prototype after the hackathon
+- Implementing a simple Markov Decision Process where two kinds of rewards are present:
+    The first-one based on the euclidian distance
+    The second-one based on the quality of the relation between sound elements (chords). 
+- The Markov decision process outputs a path for the processing particles associated with the user. 
+- The Markov decision process outputs a chord sequence for the audio generation part. 
+- Implementation of the graphical map in processing
+- Implementation of the particles behaviour (Path of the particles) associated with the user choices controlled by the markov Decision process. 
+- Creation of a synth in Pure Data to create sound based on chords sequence
+
+## Old Prototype after the hackathon
+
 - Implementation of a Markov Decison Process in Python based on the geographical data from a GeoJson data structure.
 - Simple user input
 - Development of the particle system in Processing.

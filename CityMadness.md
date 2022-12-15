@@ -36,6 +36,8 @@ The installation is conceived as artistical alternative path finder which allows
 - Implementation of the graphical map in processing
 - Implementation of the particles behaviour (Path of the particles) associated with the user choices controlled by the markov Decision process. 
 - Creation of a synth in Pure Data to create sound based on chords sequence
+- Simple OSC communication strategy between the three computing parts 
+- User input through mouse input for target choice
 
 ## Old Prototype after the hackathon
 

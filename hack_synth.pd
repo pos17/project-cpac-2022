@@ -1,4 +1,4 @@
-#N canvas 952 0 1920 976 12;
+#N canvas 952 0 958 966 12;
 #X obj 61 140 mtof;
 #X floatatom 124 156 5 0 0 1 Slew - - 0;
 #X floatatom 61 165 5 0 0 0 - - - 0;
@@ -62,6 +62,13 @@
 #X obj 690 363 * 0.0075;
 #X obj 739 281 osc~ 4;
 #X obj 483 663 freeverb~;
+#X obj 317 784 sel 0;
+#X msg 278 745 0;
+#X msg 323 745 1;
+#X obj 316 818 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
+#X obj 363 818 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X connect 0 0 2 0;
 #X connect 1 0 3 1;
 #X connect 2 0 3 0;
@@ -118,3 +125,7 @@
 #X connect 56 0 27 0;
 #X connect 57 0 11 0;
 #X connect 57 1 11 1;
+#X connect 58 0 61 0;
+#X connect 58 1 62 0;
+#X connect 59 0 58 0;
+#X connect 60 0 58 0;

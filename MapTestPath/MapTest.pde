@@ -147,8 +147,8 @@ void draw(){
     rect(width-2*buttonw, height-buttonw,buttonw, buttonw);
   }
   fill(0);
-  text("B", width-buttonw+offset, height-offset);
-  text("G", width-2*buttonw+offset, height-offset);
+  text("S", width-buttonw+offset, height-offset);
+  text("P", width-2*buttonw+offset, height-offset);
   
     
   for(int i = 0; i<streets.size(); i++){  

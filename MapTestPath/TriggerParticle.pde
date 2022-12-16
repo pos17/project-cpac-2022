@@ -98,7 +98,7 @@ class TriggerParticle{
        if(pathIdList.get(i) == parseInt(this.currentPoint.z)){
          //msg.add(pentatonic[(int)random(5)]+60);
          //msg.add("bang");
-         println(midiList.get(i));
+         //println(midiList.get(i));
          msg1.add(midiList.get(i)+60);
          msg1.add(midiList.get(i)+48);
          osc.send(msg1, pureData);

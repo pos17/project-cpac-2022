@@ -1,20 +1,21 @@
 void mouseReleased(){
   
-  if(mouseX<width && mouseX > width-buttonw && mouseY > height-buttonw){
+  if(!sourceChosen && mouseX<width && mouseX > width-buttonw && mouseY > height-buttonh){
     goodMusic = false;
-    println("BAD MUSIC");
+    //println("BAD MUSIC");
     OscMessage msg = new OscMessage("/mode");
     msg.add(0);
     osc.send(msg, pureData);
 
   }
-  else if(mouseX<width-buttonw && mouseX > width-2*buttonw && mouseY > height-buttonw){
+  else if(!sourceChosen && mouseX<width-buttonw && mouseX > width-2*buttonw && mouseY > height-buttonh){
     goodMusic = true;
-    println("GOOD MUSIC");
+    //println("GOOD MUSIC");
     OscMessage msg = new OscMessage("/mode");
     msg.add(1);
     osc.send(msg, pureData);
   }
+  else if(sourceChosen && mouseX>width-2*buttonw && mouseY > height-buttonh){}
   else{
     if(sourceChosen){
       int hasMusic;
@@ -31,5 +32,4 @@ void mouseReleased(){
       sourceChosen = true;
     }
   }
-  //}
 }

@@ -48,7 +48,7 @@ class SoundWeights{
       midi.append(notes.get(ids.get(i)));
     }
     
-    println(midi);
+    //println(midi);
     return midi;
   }
   

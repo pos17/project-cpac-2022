@@ -19,8 +19,10 @@ int startPointX = -1;
 int startPointY = -1;
 
 
-int buttonw = 50;
-int offset = 10;
+int buttonw = 55;
+int buttonh = 50;
+int offsetY = 15;
+int offsetX = 5;
 
 ArrayList<Node> mapDots = new ArrayList<Node>();
 ArrayList<Node> mapDotsClicked = new ArrayList<Node>();
@@ -123,7 +125,7 @@ void setup(){
   osc.send(msg, pureData);
     
   background(2,3,5);
-  textSize(buttonw);
+  textSize(buttonw/1.9);
 
 }
 
@@ -136,19 +138,19 @@ void draw(){
   
   if(goodMusic){
     fill(44,100,105,10);
-    rect(width-buttonw, height-buttonw, buttonw,buttonw);
+    rect(width-buttonw, height-buttonh, buttonw,buttonh);
     fill(255, 195, 34,10);
-    rect(width-2*buttonw, height-buttonw,buttonw, buttonw);
+    rect(width-2*buttonw, height-buttonh,buttonw, buttonh);
   }
   else{
     fill(255, 195, 34,10);
-    rect(width-buttonw, height-buttonw, buttonw,buttonw);
+    rect(width-buttonw, height-buttonh, buttonw,buttonh);
     fill(44,100,105,10);
-    rect(width-2*buttonw, height-buttonw,buttonw, buttonw);
+    rect(width-2*buttonw, height-buttonh,buttonw, buttonh);
   }
   fill(0);
-  text("S", width-buttonw+offset, height-offset);
-  text("P", width-2*buttonw+offset, height-offset);
+  text("STD", width-buttonw+offsetX-2, height-offsetY);
+  text("ALT", width-2*buttonw+offsetX, height-offsetY);
   
     
   for(int i = 0; i<streets.size(); i++){  

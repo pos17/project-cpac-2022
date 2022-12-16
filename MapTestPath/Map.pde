@@ -105,12 +105,14 @@ class Map {
     pfMusic = new Pathfinder(nodesMusic);
     pfNoMusic = new Pathfinder(nodesNoMusic);
     ArrayList<Node> nodesMus = pfMusic.nodes;
+    /*
     for(int i = 0; i< nodesMus.size();i++ ) {
       print(nodesMus.get(i).links.get(0)); //<>//
     }
+    */
     
-    println("number of nodes:"+nodesMusic.size());
-    println("number of nodes:"+nodesNoMusic.size());
+    //println("number of nodes:"+nodesMusic.size());
+    //println("number of nodes:"+nodesNoMusic.size());
     
     
     
@@ -151,7 +153,7 @@ class Map {
   
   void createUserPath(int clickedX,int clickedY, int srcX, int srcY,int hasMusic) {
   
-    println("click");
+    //println("click");
     Node srcNode = this.getNodeNearToPoint(srcX,srcY);
     clickedDot = this.getNodeNearToPoint(clickedX,clickedY);
     //println(mapDotsClicked.size());

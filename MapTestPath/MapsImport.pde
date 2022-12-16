@@ -86,7 +86,7 @@ class JSONPoints {
     }
     
     pf = new Pathfinder(nodes);
-    println("number of nodes:"+nodes.size());
+    //println("number of nodes:"+nodes.size());
      //println(pf.nodes);
   }
   /*
@@ -100,8 +100,8 @@ class JSONPoints {
   
   int getWidthGivenHeight(int givenheight) {
     int givenwidth = parseInt(abs(givenheight/(tRCoordY-bLCoordY)*(tRCoordX-bLCoordX)));
-    println(givenwidth);
-    println(givenheight);
+    //println(givenwidth);
+    //println(givenheight);
     return givenwidth;
   }
   
